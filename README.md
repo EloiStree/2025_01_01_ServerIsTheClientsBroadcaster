@@ -17,4 +17,10 @@ Server -> User: Connect to Websocket 98.56.54.223:8256 Can you sign this [GUID T
 User -> Server: Return sign message with RSA or ECC
 Server: Verify the user if false stop websocket connection and suspicion point.
 Server -> User: Connection established return the auth index of the RSA key
+
+To configure:
+- accept bytes info from target.
+  - No: Close connection or ignore
+  - Yes: relay locally as UDP to thrid apps.
+
 ```
